@@ -1,0 +1,51 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    android:background="@drawable/hs_main"
+     >
+
+    <TextView
+        android:id="@+id/applicationNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hearthstone Deck Builder"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@android:color/black" 
+        />
+
+    <Button
+        android:id="@+id/deckCreationButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/newDeck"
+        android:layout_marginTop="100dp"
+        android:onClick="deckCreationOnClickListener"
+         />
+
+        <Button
+        android:id="@+id/myDecksButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/myDecks"
+        android:layout_marginTop="10dp"
+        android:onClick="myDecksOnClickListener"
+         />
+
+        <Button
+        android:id="@+id/cardsCollection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cardsCollection"
+        android:layout_marginTop="10dp"
+        android:onClick="cardsCollectionOnClickListener"
+         />
+        
+</LinearLayout>

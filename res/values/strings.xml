@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hearthstone Deck Builder</string>
+    <string name="newDeck">New Deck</string>
+    <string name="myDecks">My decks</string>
+    <string name="cardsCollection">My collection</string>
+    <string name="title_activity_class_choosing">ClassChoosingActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_cards_collection">CardsCollectionActivity</string>
+    <string name="title_activity_my_decks">MyDecksActivity</string>
+
+</resources>

@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/droodCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/drood" />
+
+        <ImageView
+            android:id="@+id/hunterCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/hunter" />
+
+        <ImageView
+            android:id="@+id/mageCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/mage" />
+
+        <ImageView
+            android:id="@+id/paladinCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/paladin" />
+
+        <ImageView
+            android:id="@+id/priestCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/priest" />
+
+        <ImageView
+            android:id="@+id/rogueCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/rogue" />
+
+        <ImageView
+            android:id="@+id/shamanCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/shaman" />
+
+        <ImageView
+            android:id="@+id/warlockCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/warlock" />
+
+        <ImageView
+            android:id="@+id/warriorCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/warrior" />
+
+        <ImageView
+            android:id="@+id/neutralCardsButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:onClick="classButtonOnClickListener"
+            android:src="@drawable/neutral" />
+    </LinearLayout>
+
+    <ListView 
+        android:id="@+id/cardsListDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        />
+
+</LinearLayout>
