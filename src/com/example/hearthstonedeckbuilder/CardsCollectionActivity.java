@@ -19,7 +19,7 @@ public class CardsCollectionActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cards_collection);
 		
-		this.application=(HearthstoneDeckBuilderApplication)this.getApplication();
+		this.application=(HearthstoneDeckBuilderApplication) this.getApplication();
 	}
 	
 	public void classButtonOnClickListener(View v)

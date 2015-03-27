@@ -1,7 +1,7 @@
 package com.example.hearthstonedeckbuilder;
 
 import java.util.List;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.graphics.drawable.Drawable;
@@ -49,6 +49,7 @@ public class CardsListAdapter implements ListAdapter{
 		return 0;
 	}
 
+	@SuppressLint("NewApi")
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		if (convertView==null)
@@ -60,7 +61,8 @@ public class CardsListAdapter implements ListAdapter{
 		manaView.setText(card.getName());
 		TextView nameView = (TextView) convertView.findViewById(R.id.cardName);
 		nameView.setText(card.getName());
-		Drawable drawable = this.context.getResources().getDrawable(this.context.getResources().getIdentifier(card.getDrawableId(),"drawable",this.context.getPackageName()), null);
+		@SuppressWarnings("deprecation")
+		Drawable drawable = this.context.getResources().getDrawable(this.context.getResources().getIdentifier(card.getDrawableId(),"drawable",this.context.getPackageName()));
 		nameView.setBackground(drawable);
 		TextView amountView = (TextView) convertView.findViewById(R.id.cardNumber);
 		amountView.setText(card.getName());
