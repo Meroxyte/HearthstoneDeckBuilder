@@ -1,5 +1,7 @@
 package com.example.hearthstonedeckbuilder;
 
+import android.graphics.drawable.Drawable;
+
 public class Card {
 	
 	private String name;
@@ -10,6 +12,7 @@ public class Card {
 	private int amountInDeck;
 	private CardQuality quality;
 	private HeroesClasses cardClass;
+	private String drawableId;
 
 	public Card(String name,String desc, int manaCost, int health, int attack, CardQuality quality, HeroesClasses cardClass)
 	{
@@ -21,6 +24,7 @@ public class Card {
 		this.amountInDeck=0;
 		this.quality=quality;
 		this.cardClass=cardClass;
+		this.drawableId=this.name.replace(".","").replace(" ","_").toLowerCase();
 	}
 	
 	public String getName()
@@ -50,6 +54,11 @@ public class Card {
 	public int getAmountInDeck()
 	{
 		return this.amountInDeck;
+	}
+	
+	public String getDrawableId()
+	{
+		return this.drawableId;
 	}
 	
 	public CardQuality getQuality()
@@ -95,4 +104,5 @@ public class Card {
 		}
 		return true;
 	}
+
 }
