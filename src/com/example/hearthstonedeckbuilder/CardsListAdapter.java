@@ -12,22 +12,22 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
-public class CardsListAdapter implements ListAdapter{
+public class CardsListAdapter implements ListAdapter {
 
 	private List<Card> cardsList;
 	private Context context;
 	private OnClickListener itemClickListener;
-	
-	public CardsListAdapter (Context context, List<Card> cardslist, OnClickListener onclick)
-	{
-		this.context=context;
-		this.cardsList=cardsList;
-		this.itemClickListener=onclick;
+
+	public CardsListAdapter(Context context, List<Card> cardslist,
+			OnClickListener onclick) {
+		this.context = context;
+		this.cardsList = cardsList;
+		this.itemClickListener = onclick;
 	}
-	
+
 	@Override
 	public int getCount() {
-		
+
 		return this.cardsList.size();
 	}
 
@@ -52,21 +52,25 @@ public class CardsListAdapter implements ListAdapter{
 	@SuppressLint("NewApi")
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		if (convertView==null)
-			convertView = LayoutInflater.from(this.context).inflate(R.layout.card_layout, parent, false);
-		
+		if (convertView == null)
+			convertView = LayoutInflater.from(this.context).inflate(
+					R.layout.card_layout, parent, false);
+
 		Card card = (Card) this.getItem(position);
-		
+
 		TextView manaView = (TextView) convertView.findViewById(R.id.manaCost);
 		manaView.setText(card.getName());
 		TextView nameView = (TextView) convertView.findViewById(R.id.cardName);
 		nameView.setText(card.getName());
 		@SuppressWarnings("deprecation")
-		Drawable drawable = this.context.getResources().getDrawable(this.context.getResources().getIdentifier(card.getDrawableId(),"drawable",this.context.getPackageName()));
+		Drawable drawable = this.context.getResources().getDrawable(
+				this.context.getResources().getIdentifier(card.getDrawableId(),
+						"drawable", this.context.getPackageName()));
 		nameView.setBackground(drawable);
-		TextView amountView = (TextView) convertView.findViewById(R.id.cardNumber);
+		TextView amountView = (TextView) convertView
+				.findViewById(R.id.cardNumber);
 		amountView.setText(card.getName());
-		
+
 		return convertView;
 	}
 
@@ -84,22 +88,22 @@ public class CardsListAdapter implements ListAdapter{
 
 	@Override
 	public boolean isEmpty() {
-		
-		if (this.cardsList.size()==0)
-				return true;
+
+		if (this.cardsList.size() == 0)
+			return true;
 		return false;
 	}
 
 	@Override
 	public void registerDataSetObserver(DataSetObserver arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void unregisterDataSetObserver(DataSetObserver arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

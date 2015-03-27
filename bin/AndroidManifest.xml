@@ -9,11 +9,11 @@
         android:targetSdkVersion="21" />
 
     <application
+        android:name=".HearthstoneDeckBuilderApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:name=".HearthstoneDeckBuilderApplication" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name" >

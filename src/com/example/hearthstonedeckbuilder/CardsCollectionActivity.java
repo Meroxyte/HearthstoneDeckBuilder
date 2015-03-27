@@ -12,20 +12,18 @@ public class CardsCollectionActivity extends Activity {
 
 	private List<Card> cardsList;
 	private HearthstoneDeckBuilderApplication application;
-	
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cards_collection);
-		
-		this.application=(HearthstoneDeckBuilderApplication) this.getApplication();
+
+		this.application = (HearthstoneDeckBuilderApplication) this
+				.getApplication();
 	}
-	
-	public void classButtonOnClickListener(View v)
-	{
-		switch (v.getId())
-		{
+
+	public void classButtonOnClickListener(View v) {
+		switch (v.getId()) {
 		case R.id.droodCardsButton:
 			displayCards(HeroesClasses.DROOD);
 			break;
@@ -58,11 +56,11 @@ public class CardsCollectionActivity extends Activity {
 			break;
 		}
 	}
-	
-	//Change attribute cardsList to be the list of cards corresponding to the hero
-	private void displayCards(HeroesClasses heroeClass) 
-	{	
-		
-		this.cardsList=this.application.getCardsList(heroeClass);
+
+	// Change attribute cardsList to be the list of cards corresponding to the
+	// hero
+	private void displayCards(HeroesClasses heroeClass) {
+
+		this.cardsList = this.application.getCardsList(heroeClass);
 	}
 }

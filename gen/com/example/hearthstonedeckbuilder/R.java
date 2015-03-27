@@ -1651,8 +1651,9 @@ containing a value of this type.
         public static final int priest=0x7f020041;
         public static final int rogue=0x7f020042;
         public static final int shaman=0x7f020043;
-        public static final int warlock=0x7f020044;
-        public static final int warrior=0x7f020045;
+        public static final int si7_agent=0x7f020044;
+        public static final int warlock=0x7f020045;
+        public static final int warrior=0x7f020046;
     }
     public static final class id {
         public static final int action_bar=0x7f090031;
