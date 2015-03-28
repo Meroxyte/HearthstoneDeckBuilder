@@ -21,6 +21,11 @@ public class HearthstoneDeckBuilderApplication extends Application {
 				7, 7, CardQuality.LEGENDARY, HeroesClasses.NEUTRAL));
 	}
 
+	public List<Card> getCards()
+	{
+		return this.cardsList;
+	}
+	
 	public List<Card> getCardsList(HeroesClasses heroeClass) {
 		List<Card> res = new ArrayList<Card>();
 		for (Card card : this.cardsList) {

@@ -21,7 +21,7 @@ public class CardsListAdapter implements ListAdapter {
 	public CardsListAdapter(Context context, List<Card> cardslist,
 			OnClickListener onclick) {
 		this.context = context;
-		this.cardsList = cardsList;
+		this.cardsList = cardslist;
 		this.itemClickListener = onclick;
 	}
 
@@ -59,7 +59,7 @@ public class CardsListAdapter implements ListAdapter {
 		Card card = (Card) this.getItem(position);
 
 		TextView manaView = (TextView) convertView.findViewById(R.id.manaCost);
-		manaView.setText(card.getName());
+		manaView.setText(card.getManaCost()+"");
 		TextView nameView = (TextView) convertView.findViewById(R.id.cardName);
 		nameView.setText(card.getName());
 		@SuppressWarnings("deprecation")
@@ -69,7 +69,7 @@ public class CardsListAdapter implements ListAdapter {
 		nameView.setBackground(drawable);
 		TextView amountView = (TextView) convertView
 				.findViewById(R.id.cardNumber);
-		amountView.setText(card.getName());
+		amountView.setText(card.getAmountInDeck()+"");
 
 		return convertView;
 	}

@@ -17,15 +17,6 @@ public class CardsCollectionActivity extends Activity implements
 	private List<Card> cardsList;
 	private HearthstoneDeckBuilderApplication application;
 
-	
-	public CardsCollectionActivity() {
-		
-		this.application = (HearthstoneDeckBuilderApplication) this
-				.getApplication();
-		
-		this.cardsList = new ArrayList<Card>();
-		this.cardsList = this.application.getCardsList(HeroesClasses.NEUTRAL);
-	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,8 +25,8 @@ public class CardsCollectionActivity extends Activity implements
 		this.application = (HearthstoneDeckBuilderApplication) this
 				.getApplication();
 		
-		this.cardsList = new ArrayList<Card>();
 		this.cardsList = this.application.getCardsList(HeroesClasses.NEUTRAL);
+		
 		ListView listView = (ListView) findViewById(R.id.cardsListDisplay);
 		listView.setAdapter(new CardsListAdapter(this.getBaseContext(),
 				this.cardsList, this));
@@ -45,10 +36,10 @@ public class CardsCollectionActivity extends Activity implements
 	// hero
 	private void displayCards(HeroesClasses heroeClass) {
 
-		this.cardsList = this.application.getCardsList(heroeClass);
-		ListView listView = (ListView) findViewById(R.id.cardsListDisplay);
-		listView.setAdapter(new CardsListAdapter(this.getBaseContext(),
-				this.cardsList, this));
+//		this.cardsList = this.application.getCardsList(heroeClass);
+//		ListView listView = (ListView) findViewById(R.id.cardsListDisplay);
+//		listView.setAdapter(new CardsListAdapter(this.getBaseContext(),
+//				this.cardsList, this));
 	}
 
 	@Override
