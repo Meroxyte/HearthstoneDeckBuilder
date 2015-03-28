@@ -24,7 +24,7 @@ public class Card {
 		this.amountInDeck = 0;
 		this.quality = quality;
 		this.cardClass = cardClass;
-		this.drawableId = this.name.replace(".", "").replace(" ", "_")
+		this.drawableId = this.name.replace(".", "").replace(" ", "_").replace(":", "")
 				.toLowerCase();
 	}
 

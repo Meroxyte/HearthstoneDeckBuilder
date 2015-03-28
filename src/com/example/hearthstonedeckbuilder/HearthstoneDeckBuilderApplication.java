@@ -17,6 +17,8 @@ public class HearthstoneDeckBuilderApplication extends Application {
 				CardQuality.COMMON, HeroesClasses.ROGUE));
 		this.cardsList.add(new Card("SI:7 Agent", "Combo: Deal 2 damage.", 3,
 				3, 3, CardQuality.RARE, HeroesClasses.ROGUE));
+		this.cardsList.add(new Card("Dr. Boom", "Battlecry: Summon 2 1/1 Boom bots. WARNING: Bots may explode.", 7,
+				7, 7, CardQuality.LEGENDARY, HeroesClasses.NEUTRAL));
 	}
 
 	public List<Card> getCardsList(HeroesClasses heroeClass) {

@@ -46,7 +46,7 @@ public class CardsListAdapter implements ListAdapter {
 	@Override
 	public int getItemViewType(int arg0) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
 	@SuppressLint("NewApi")
@@ -77,7 +77,7 @@ public class CardsListAdapter implements ListAdapter {
 	@Override
 	public int getViewTypeCount() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
 	@Override
