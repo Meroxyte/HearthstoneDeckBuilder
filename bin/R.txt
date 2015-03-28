@@ -355,8 +355,9 @@ int drawable paladin 0x7f020040
 int drawable priest 0x7f020041
 int drawable rogue 0x7f020042
 int drawable shaman 0x7f020043
-int drawable warlock 0x7f020044
-int drawable warrior 0x7f020045
+int drawable si7_agent 0x7f020044
+int drawable warlock 0x7f020045
+int drawable warrior 0x7f020046
 int id action_bar 0x7f090031
 int id action_bar_activity_content 0x7f090003
 int id action_bar_container 0x7f090030
