@@ -25,7 +25,7 @@ public class CardsCollectionActivity extends Activity implements
 		this.application = (HearthstoneDeckBuilderApplication) this
 				.getApplication();
 		
-		this.cardsList = this.application.getCardsList(HeroesClasses.NEUTRAL);
+		this.cardsList = this.application.getCards();
 		
 		ListView listView = (ListView) findViewById(R.id.cardsListDisplay);
 		listView.setAdapter(new CardsListAdapter(this.getBaseContext(),

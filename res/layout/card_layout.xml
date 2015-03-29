@@ -6,8 +6,8 @@
 
     <TextView
         android:id="@+id/manaCost"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginLeft="5dp"
         android:background="@drawable/mana_crystal"
         android:gravity="center"
@@ -17,8 +17,8 @@
 
     <TextView
         android:id="@+id/cardName"
-        android:layout_width="248dp"
-        android:layout_height="31dp"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
         android:background="@android:color/black"
         android:gravity="right"
         android:text=""
@@ -27,8 +27,8 @@
 
     <TextView
         android:id="@+id/cardNumber"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginLeft="5dp"
         android:background="@android:color/black"
         android:gravity="center"
